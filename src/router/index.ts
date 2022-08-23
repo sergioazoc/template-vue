@@ -18,7 +18,8 @@ const router = createRouter({
       name: 'not-found',
       component: () => import("@/views/NotFoundView.vue"),
     }
-  ]
+  ],
+  linkExactActiveClass: "active"
 })
 
 export default router

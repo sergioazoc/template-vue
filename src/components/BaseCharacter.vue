@@ -9,41 +9,26 @@
 </script>
 
 <template>
-  <div class="character-card">
+  <div
+    class="card"
+    style="max-width: 300px;"
+  >
     <img
       :src="props.image"
+      class="card-img-top"
       :alt="props.name"
     >
-    <div class="character-content">
-      <h3>{{ props.name }}</h3>
-      <h5>{{ props.status }} - {{ props.species }}</h5>
-      <small>Last known location:</small>
-      <h5>{{ props.locationName }}</h5>
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ props.name }}
+      </h5>
+      <small>{{ props.status }} - {{ props.species }}</small>
+      <p class="card-text mb-0">
+        Last known location:
+      </p>
+      <p class="card-text">
+        {{ props.locationName }}
+      </p>
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-  .character-card {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    width: 350px;
-    color: #222222;
-    border: 1px solid #dddddd;
-    
-    img {
-      width: 100%;
-      max-width: 150px;
-    }
-
-    .character-content {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      * {
-        margin: 0;
-      }
-    }
-  }
-</style>

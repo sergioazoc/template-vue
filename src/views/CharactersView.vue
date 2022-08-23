@@ -10,12 +10,12 @@
 </script>
 
 <template>
-  <div class="character-list">
+  <div class="d-flex flex-wrap justify-content-center gap-3">
     <RouterLink
       v-for="character in characters?.results"
       :key="character.id"
       :to="{ name: 'character', params: { id: character.id } }"
-      class="character-card"
+      class="character-card text-decoration-none text-dark"
     >
       <BaseCharacter
         :name="character.name"
@@ -27,12 +27,3 @@
     </RouterLink>
   </div>
 </template>
-
-<style lang="scss" scoped>
-  .character-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-</style>

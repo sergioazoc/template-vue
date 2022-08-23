@@ -3,20 +3,23 @@
 </script>
 
 <template>
-  <nav class="navbar">
-    <RouterLink :to="{ name: 'characters' }">
-      List of Characters
-    </RouterLink>
+  <nav class="navbar navbar-expand navbar-dark bg-primary mb-3">
+    <div class="container-fluid">
+      <div
+        id="navbarSupportedContent"
+        class="collapse navbar-collapse"
+      >
+        <ul class="navbar-nav mx-auto mb-lg-0">
+          <li class="nav-item">
+            <RouterLink
+              :to="{ name: 'characters' }"
+              class="nav-link"
+            >
+              List of Characters
+            </RouterLink>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
-
-<style lang="scss">
-  .navbar {
-    background-color: #dddddd;
-    padding: 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-  }
-</style>
