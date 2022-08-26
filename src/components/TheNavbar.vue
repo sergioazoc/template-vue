@@ -18,6 +18,14 @@
               List of Characters
             </RouterLink>
           </li>
+          <li class="nav-item">
+            <RouterLink
+              :to="{ name: 'form' }"
+              class="nav-link"
+            >
+              Form
+            </RouterLink>
+          </li>
         </ul>
       </div>
     </div>
