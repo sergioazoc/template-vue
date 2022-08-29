@@ -19,6 +19,8 @@
     <BaseInput
       placeholder="ingresar un texto"
       type="text"
+      valid-feedback="Texto correcto"
+      invalid-feedback="Debes ingresar un texto"
     />
     <BaseInput
       placeholder="ingresar un password"
